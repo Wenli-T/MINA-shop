@@ -1,0 +1,79 @@
+page {
+    background-color: #eee;
+}
+
+.fb_main {
+   
+    padding: 20rpx;
+    color: #666;
+    
+    // 问题的种类区域
+    .fb_title {}
+    .fb_tips {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 20rpx;
+      text {
+        width: 30%;
+        background-color: #fff;
+        margin: 10rpx;
+        text-align: center;
+        padding: 10rpx;
+      }
+    }
+  
+    .fb_content {
+      margin-top: 20rpx;
+      background-color: #fff;
+
+      // 文本域区域
+      textarea {
+       padding: 20rpx;
+       font-size: 26rpx;
+      }
+      
+      // 添加图片区域
+      .fb_tool {
+          display: flex;
+          flex-wrap: wrap;
+          padding-bottom: 20rpx;
+        button {
+            width: 80rpx;
+            height: 80rpx;
+            margin: 0;
+            font-size: 50rpx;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 20rpx;
+            color: #ccc;
+          
+        }
+        .up_img_item {
+          margin-left: 20rpx;
+        }
+      }
+    }
+    
+    // 提交表单按钮
+    .form_btn_wrap {
+      margin-top: 20rpx;
+      
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--themeColor);
+        color: white;
+        margin-right: 0;
+        width: 30%;
+        font-size: 30rpx;
+        font-weight: normal;
+
+        icon {
+            margin-right: 10rpx;
+        }
+      }
+    }
+  }

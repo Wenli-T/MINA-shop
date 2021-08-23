@@ -1,0 +1,108 @@
+// 解决底部工具栏遮挡页面内容问题
+page {
+  padding-bottom: 90rpx;
+}
+
+// 轮播图区域
+.detail_swiper {
+    swiper {
+      height: 60vw;
+      text-align: center;
+      image {
+          width: 60%;
+      }
+    }
+}
+
+// 商品价格区域
+.goods_price {
+  padding: 15rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: var(--themeColor);
+}
+.goods_name_row {
+  border-bottom: 5rpx solid #dedede;
+  border-top: 5rpx solid #dedede;
+  padding: 10rpx 0;
+  display: flex;
+  .goods_name {
+    flex: 5;
+    color: #000;
+    font-size: 30rpx;
+    padding: 0 10rpx;
+    // 文字过多时隐藏
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  .goods_collect {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 1rpx solid #000;
+    .iconfont {}
+    .icon-shoucang1 {
+      color: var(--themeColor);
+    }
+    .collect_text {}
+  }
+}
+
+// 图文详情区域
+.goods_info {
+  .goods_info_title {
+    font-size: 32rpx;
+    color: var(--themeColor);
+    font-weight: 600;
+    padding: 20rpx;
+  }
+  .goods_content {}
+}
+
+// 底部工具栏区域
+.btm_tool {
+  border-top: 1rpx solid #ccc;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: #fff;
+  display: flex;
+  .tool_item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24rpx;
+    position: relative;
+    // 另加一个button实现客服/分享功能 宽高100% 透明度0
+    button {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+    }
+  }
+  .btn_cart {
+    flex: 2;
+    background-color: #ffa500;
+    color: #fff;
+    font-size: 30rpx;
+    font-weight: 600;
+  }
+  .btn_buy {
+    flex: 2;
+    background-color: #eb4450;
+    color: #fff;
+    font-size: 30rpx;
+    font-weight: 600;
+  }
+}
